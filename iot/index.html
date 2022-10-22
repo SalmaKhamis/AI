@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<button class="tablink" onclick="openPage('Home', this, '#FF9F55')">IOT</button>
+<button class="tablink" onclick="openPage('News', this, '#FF9F55')" id="defaultOpen">Month 2</button>
+<button class="tablink" onclick="openPage('Contact', this, '#FF9F55')">Month 3</button>
+
+<div id="Home" class="tabcontent">
+  
+<div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>Chapter one (Introduction in IOT)</h2>
+        <a href="pdf/ch1.pdf" download style="margin-bottom: 10px;color : #FF9F55;">Download PDF</a>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>Chapter Two (IOT Devices)</h2>
+        <a href="pdf/ch2.pdf" download style="margin-bottom: 10px;color : #FF9F55;">Download PDF</a>
+        
+    </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2>Chapter Three (Internet of ThingsApplications.)</h2>
+        <a href="pdf/ch3.pdf" download style="margin-bottom: 10px;color : #FF9F55;">Download PDF</a>
+        
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>Lab (Arduino)</h2>
+        <a href="pdf/New Microsoft PowerPoint Presentation.pdf" download style="margin-bottom: 10px;color : #FF9F55;">Download PDF</a>
+
+    </div>
+</div>
+    <div class="container left">
+      <div class="content">
+        <h2>More Information (OIC)</h2>
+        <a href="pdf/OIC-IoT-Standards-and-Implementation_White-Paper_Final.pdf" download style="margin-bottom: 10px;color : #FF9F55;">Download PDF</a>
+
+      </div>
+    </div>
+
+  </div><!-- gallery -->
+
+  <h2 style="text-align:center">Summary</h2>
+
+  <div class="row">
+    <div class="column">
+      <img src="image/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="image/3.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="image/2.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="image/4.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="image/6.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="image/5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    
+    
+  </div>
+  
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="image/1.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="image/3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="image/2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="image/4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="image/6.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="image/5.jpg" style="width:100%">
+      </div>
+     
+  
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+  
+      <div class="column">
+        <img class="demo cursor" src="image/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="page 1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image/3.jpg" style="width:100%" onclick="currentSlide(1)" alt="page 1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image/2.jpg" style="width:100%" onclick="currentSlide(1)" alt="page 1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image/4.jpg" style="width:100%" onclick="currentSlide(1)" alt="page 1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image/6.jpg" style="width:100%" onclick="currentSlide(1)" alt="page 1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="image/5.jpg" style="width:100%" onclick="currentSlide(1)" alt="page 1">
+      </div>
+     
+    </div>
+  </div>
+  
+  <script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+<!-- gallery -->
+<footer style="text-align:center;margin-top:30px">
+    <small>By Salma Khamis .. Sorry if there are any mistakes
+        <br>
+        Support : Lara Safwat & Farah Mohammed (Thanks alot)
+    </small>
+</footer>
+</div>
+
+
+<div id="News" class="tabcontent">
+    <div class="info">
+        <p><strong>Hi!</strong>Comming Soon...</p>
+      </div>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <div class="info">
+        <p><strong>Hi!</strong> Comming Soon...</p>
+      </div>
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+<script> 
+    document.addEventListener('contextmenu', event=> event.preventDefault()); 
+    document.onkeydown = function(e) { 
+    if(event.keyCode == 123) { 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+    return false; 
+    } 
+    } 
+    </script> 
+</body>
+</html>
